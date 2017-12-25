@@ -1,10 +1,18 @@
 ! *** Test - include "relative path" from non-own place
 
-
 ! #include ../path2/includedfile.txt
-! #include https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_whitelist.txt
-! #include https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_whitelist.txt
-! #include https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_whitelist.txt
 
-!#include https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_whitelist.txt
+! - This file:
+! #include https://raw.githubusercontent.com/BilBg/BilBg_Test/master/Test_include_relative_path.txt
+
+! #include https://raw.githubusercontent.com/../../../Test_include_relative_path.txt
+! #include                                   ../../../Test_include_relative_path.txt
+! #include                                   ../../../easylist_whitelist.txt
+! #include                                   ../../../easylist/easylist/master/easylist/easylist_whitelist.txt
+
+! #include          https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_whitelist.txt
+
+! - Real #include :
+!#include ../../../easylist/easylist/master/easylist/easylist_whitelist.txt
+
 

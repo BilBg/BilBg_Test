@@ -1,3 +1,4 @@
+
 ! *** Test - include "relative path" from non-own place
 
 ! #include ../path2/includedfile.txt
@@ -9,10 +10,9 @@
 ! #include                                   ../../../Test_include_relative_path.txt
 ! #include                                   ../../../easylist_whitelist.txt
 ! #include                                   ../../../easylist/easylist/master/easylist/easylist_whitelist.txt
-
 ! #include          https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_whitelist.txt
 
 ! - Real #include :
-!#include ../../../easylist/easylist/master/easylist/easylist_whitelist.txt
-
+!#include           ../../../easylist/easylist/master/easylist/easylist_whitelist.txt
+!#include SubDir/../../../../easylist/easylist/master/easylist/easylist_whitelist_popup.txt
 
